@@ -1,0 +1,321 @@
+/*
+Theme Name: Cyrus studio
+Theme Coder: Mubarak
+Psd Designer: Free online theme
+
+First Color: #E89F10;
+seconed color: #101010;
+rgba: rgba(232,159,16,0.7)
+nav color: #777
+*/
+/* Start Main rules */
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+/* End Main rules */
+/* =============->> Start NavBar <<-============= */
+nav {background-color: #101010; transition: all 1s ease-in-out}
+nav .upper-bar {
+  background: url('../images/lines.png');
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+nav .container {margin-top: 5px}
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {color: #E89F10}
+.navbar-light .navbar-nav .nav-link {
+  color: #777;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-left: 15px
+}
+/* ===->> mobile settings <<-=== */
+.navbar-toggler {background-color: #E89F10}
+.navbar-light .navbar-toggler {border-color: #fff}
+
+/* =============->> End NavBar <<-============= */
+/* =============->> Start slider <<-============= */
+.slider .carousel-item, .slider .carousel-item,
+.slider .carousel-item, .slider .carousel-item {
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important
+}
+.slider .carousel-item:first-child {background: url('../images/bg1.jpg') no-repeat}
+.slider .carousel-item:nth-child(2) {background: url('../images/bg2.jpg') no-repeat}
+.slider .carousel-item:nth-child(3) {background: url('../images/bg3.jpg') no-repeat}
+.slider .carousel-item:nth-child(4) {background: url('../images/bg4.jpg') no-repeat}
+/* =============->> End slider <<-============= */
+/* =============->> Start about <<-============= */
+.about {
+  background: url('../images/about 2.jpg') no-repeat center right fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 80px 0;
+  position: relative;
+}
+.about .overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.about h2 {
+  margin-bottom: 57px;
+  position: relative;
+  z-index: 2
+}
+.about .about-inner {z-index: 1}
+.responsive-h3 { margin-bottom: 27px;}
+.responsive-p { font-size: 1.1vw;}
+
+/* services */
+.services {
+  position: relative;
+  padding-top: 50px
+}
+.services h2 {
+  font-size: 2.5vw;
+  text-transform: capitalize; 
+  margin-top: 35px
+}
+.services .service-inner li {
+  border: 1px solid rgba(0, 0, 0, .2);
+  width: 10vw;
+  height: 10vw;
+  padding: 0;
+  border-radius: 50%;
+  margin-right: 2vw;
+}
+.services .service-inner li i {
+  font-size: 2.7vw;
+  margin-top: 2.5vw;
+  margin-bottom: 1vw
+}
+.services .service-inner li p {
+  font-size: 1.1vw;
+  text-transform: capitalize;
+}
+/* =============->> End about <<-============= */
+/* =============->> Start portfolio <<-============= */
+
+.portfolio .col {
+  padding: 0
+}
+.portfolio .portfolio-inner .prot-item h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3vw;
+  transform: translate(-50%, -50%);
+  -webkit-ransform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-text-stroke: 1px #101010;
+  -moz-text-stroke: 1px #101010;
+  -o-text-stroke: 1px #101010;
+}
+.portfolio .prot-item {
+  position: relative;
+}
+.portfolio .prot-item .img-overly {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 0;
+  height: 100%;
+  transition: all .5s ease;
+  overflow: hidden;
+}
+.portfolio .prot-item .img-overly span {
+  color: #fff;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-ransform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  margin-top: 3vw;
+  white-space: nowrap;
+}
+.portfolio .prot-item .img-overly strong {color: #E89F10 }
+.portfolio .prot-item:hover .img-overly {width: 100%}
+/* =============->> End portfolio <<-============= */
+/* =============->> Start testimonials <<-============= */
+.testimonials {
+  background: url('../images/about 2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  padding: 80px 0;
+  position: relative;
+}
+.testimonials .test-overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.testimonials .clients{position: relative;}
+.testimonials .clients > h2 {
+  font-size: 2.5vw;
+  margin-bottom: 1.5em;
+}
+
+.testimonials .clients .clients-right p {
+  font-size: 1vw;
+  margin-left: -7px;
+  margin-bottom: 6px;
+}
+.testimonials .clients .clients-right h5 {
+  font-size: 1.1vw;
+  margin-left: -7px;
+}
+.testimonials .clients-right .col-9 {padding-bottom: 32px}
+.testimonials .clients .carousel-indicators li {
+    width: .5vw;
+    height: .5vw;
+    border: 1px solid #E89F10;
+    border-radius: 50%;
+}
+.testimonials .clients .carousel-indicators .active {border-width: 1.2px}
+
+/* =============->> inclue our team <<-============= */
+.our-team {margin-bottom: 50px}
+.our-team h2 {font-size: 2.5vw; margin-bottom: 1em; margin-top: 1.5em}
+.our-team img {width: 100%}
+/* =============->> inlude statictics <<-============= */
+.statictics {
+  background: url('../images/lab.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 51px 0;
+  position: relative;
+  color: #fff
+}
+.statictics .stati-overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #E89F10;
+  opacity: 0.5
+}
+.statictics .stat-item i {margin-top: 23px}
+.statictics .stat-item p:first-of-type {margin: 9px 0;font-size: 1.5em;font-weight: 600;}
+  .statictics .stat-item p:last-of-type {font-size: 1.8vw; text-transform: capitalize;}
+/* =============->> my form <<-============= */
+.myForm {
+  padding-top: 80px;
+  position: relative;
+}
+.myForm h2 {
+  font-size: 2.1vw;
+  margin-bottom: 65px
+}
+.myForm form {
+  width: 60%;
+  margin: 1rem auto;
+}
+.myForm .form-control-lg {
+  height: calc(1.5em + 1rem + 17px)
+}
+.myForm .form-control:focus {
+  border-color: #ecb23f;
+  box-shadow: 0 0 0 0.2rem rgba(232,159,16,.25);
+}
+.myForm .btn-info {
+  background-color: #E89F10;
+  border-color: #E89F10;
+}
+.myForm .btn-info:hover {
+  background-color: #ecb23f;
+  border-color: #ecb23f;
+}
+
+/* =============->> End testimonials <<-============= */
+/* =============->> Start footer <<-============= */
+footer {
+  background-color: #101010;
+  padding: 128px 0;
+  color: #777
+}
+/* =============->> End footer <<-============= */
+/* button UP */
+.go-up {
+  position: fixed;
+  bottom: 20px;
+  right: -36px;
+  cursor: pointer;
+  display: none;
+}
+
+.go-up img {
+  width: 52%
+}
+/* button UP */
+
+/* Loading Screen */
+.load-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #d35400;
+  z-index: 999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+
+  margin: 16% auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+/* Loading Screen */
