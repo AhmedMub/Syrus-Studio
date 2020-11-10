@@ -1,2 +1,2 @@
-# SyrusStudio
+# Syrus-Studio
 Syrus Studio
